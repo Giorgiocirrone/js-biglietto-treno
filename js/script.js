@@ -37,4 +37,20 @@ console.log('età', age);
 
 const basePrice = Km * pricePerKm;
 
-let finalPriece = basePrice; 
+let finalPriece = basePrice;
+
+
+
+//CONTROLLO DEI DATI 
+
+if (age >= 65) {
+    finalPriece *= 0.6;
+
+
+} else if (age < 18) {
+    finalPriece *= 0.8;
+
+}
+
+
+console.log(finalPriece)
